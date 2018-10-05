@@ -1,0 +1,10 @@
+<%= link_to 'Create Cup', new_cup_path %>
+<table>
+  <% Cup.all.each do |cup| %>
+    <tr>
+      <td><%= cup.name %></td>
+      <td><%= cup.color %></td>
+      <td><%= cup.capacity %></td>
+    </tr>
+  <% end %>
+</table>
